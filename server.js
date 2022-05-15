@@ -6,6 +6,8 @@ const connectionDB = require('./config/db');
 
 connectionDB();
 
+app.use(express.json());
+
 app.get('/',(req, res)=>{
     res.send('Hello World');
 })
