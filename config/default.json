@@ -1,3 +1,4 @@
 {
-    "mongoDbURI":"mongodb+srv://hamzahashmioffice:<password>@mern.73wj8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI":"mongodb+srv://hamzahashmioffice:Hashmi.007@mern.0yeka.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret" : "jwtPrivateKey"
 }
