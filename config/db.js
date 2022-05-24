@@ -7,11 +7,12 @@ const connectDB = async () => {
     await mongoose.connect(db, {
       useNewUrlParser: true,
     //   useCreateIndex: true,
+    // if we have a problem with the connection we can use this
     //   useFindAndModify: false,
       useUnifiedTopology: true
     });
 
-    console.log('MongoDB Connected...');
+    console.log(`DataBase is connected.`);
   } catch (err) {
     console.error(err.message);
     // Exit process with failure
