@@ -1,4 +1,6 @@
 {
     "mongoURI":"mongodb+srv://hamzahashmioffice:Hashmi.007@mern.0yeka.mongodb.net/?retryWrites=true&w=majority",
-    "jwtSecret" : "jwtPrivateKey"
+    "jwtSecret" : "jwtPrivateKey",
+    "githubClientId":"5f3edc3ce30cb9b5d46e",
+    "githubSecret":"83a428bb9b81865b4aee10ba5b272ca18c0976b3"
 }
