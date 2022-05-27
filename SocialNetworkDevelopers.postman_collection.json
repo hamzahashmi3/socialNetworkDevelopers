@@ -261,6 +261,398 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Add profile Experience",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4MzZiYzg5YTcxMzMwNmRmZjljYmEzIn0sImlhdCI6MTY1MzQwMjgyMCwiZXhwIjoxNjUzODM0ODIwfQ.1T3o7defWVKHtBsF8rm4l4uHkgxR_BUBaiB6gmZG4a0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"react developer\",\n    \"company\": \"12345678asdfghjkl\",\n    \"location\":\"lahore\",\n    \"from\": \"08-10-2020\",\n    \"current\":true,\n    \"description\":\"make web applications.\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/profile/experience",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"experience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Profile Experience",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4MzZiYzg5YTcxMzMwNmRmZjljYmEzIn0sImlhdCI6MTY1MzQwMjgyMCwiZXhwIjoxNjUzODM0ODIwfQ.1T3o7defWVKHtBsF8rm4l4uHkgxR_BUBaiB6gmZG4a0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/profile/experience/628df5d451e007f9f1df113d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"experience",
+								"628df5d451e007f9f1df113d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Profile Education",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "JSON Content",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"school\": \"uni of punjab\",\n    \"degree\": \"BSIT\",\n    \"fieldofstudy\":\"WEB\",\n    \"from\": \"08-10-2016\",\n    \"to\":\"08-10-2020\",\n    \"description\":\"studed and enjoyed a lot there\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/profile/education",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Profile Education",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/profile/education/628dffc2881dee6df35f6ddd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"education",
+								"628dffc2881dee6df35f6ddd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile Github Repos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/profile/github/hamzahashmi3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"github",
+								"hamzahashmi3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Get All Posts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzU1Njk4MSwiZXhwIjoxNjUzOTg4OTgxfQ.pc8XTQw9ZFfZxrxBuk3ZhXNAgApiOTdh8GGqS-3i6h4",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "JSON Content",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzU0NzU3MSwiZXhwIjoxNjUzOTc5NTcxfQ.FjrXtb8JRzdAzlHN2kibDPJ6xfUeISlUOcotDxyzoy8",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\":\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/628f23be8611e25e84fd2c06",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"628f23be8611e25e84fd2c06"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like a post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/like/628f23ac8611e25e84fd2c03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"like",
+								"628f23ac8611e25e84fd2c03"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike a post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/unlike/628f23ac8611e25e84fd2c03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"unlike",
+								"628f23ac8611e25e84fd2c03"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add comment to post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "JSON Content",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\":\"thankssssssssssssssss\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/posts/comment/628f23ac8611e25e84fd2c03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"comment",
+								"628f23ac8611e25e84fd2c03"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a comment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/comment/628f23ac8611e25e84fd2c03/6290bff11a7ccf12b262bd11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"comment",
+								"628f23ac8611e25e84fd2c03",
+								"6290bff11a7ccf12b262bd11"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
