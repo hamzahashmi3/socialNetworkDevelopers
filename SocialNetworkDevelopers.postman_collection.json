@@ -521,6 +521,138 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "like a post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/like/628f23ac8611e25e84fd2c03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"like",
+								"628f23ac8611e25e84fd2c03"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike a post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/unlike/628f23ac8611e25e84fd2c03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"unlike",
+								"628f23ac8611e25e84fd2c03"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add comment to post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "JSON Content",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\":\"thankssssssssssssssss\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/posts/comment/628f23ac8611e25e84fd2c03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"comment",
+								"628f23ac8611e25e84fd2c03"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a comment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI4YzkwNTZmOWRhMDE4Y2RkMTlhNjZhIn0sImlhdCI6MTY1MzM5MTkyOSwiZXhwIjoxNjUzODIzOTI5fQ.mswvzxvsYyZD56PckrudrWZR8tuP-bj-XGvurBHpZ8E",
+								"description": "hamza token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/comment/628f23ac8611e25e84fd2c03/6290bff11a7ccf12b262bd11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"comment",
+								"628f23ac8611e25e84fd2c03",
+								"6290bff11a7ccf12b262bd11"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
