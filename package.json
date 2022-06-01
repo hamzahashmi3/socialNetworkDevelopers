@@ -4,7 +4,7 @@
   "description": "social network for developers",
   "main": "server.js",
   "scripts": {
-    "server": "PORT=3000 nodemon server",
+    "server": "PORT=5000 nodemon server",
     "client": "npm strat --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
