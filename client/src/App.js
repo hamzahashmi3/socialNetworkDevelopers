@@ -5,6 +5,7 @@ import Navbar from './components/Layout/Navbar';
 import LandingPage from './components/Layout/LandingPage';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+import Alert from './components/Layout/Alert';
 
 // Redux
 import {Provider} from 'react-redux';
@@ -23,6 +24,7 @@ const App=()=> {
             
 
           <section className='container'>
+            <Alert />
             <Routes>
               <Route exact path='/login' element={<Login />}/>
               <Route exact path='/register' element={<Register/>} />
