@@ -12,7 +12,7 @@ const config = require('config');
 
 
         // @route GET api/profile/me
-        // @desc  TEST route
+        // @desc  gett current user profile
         // @access private
     router.get('/me',auth, async (req,res)=>{
         try {

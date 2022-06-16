@@ -9,7 +9,7 @@ const { check, validationResult } = require('express-validator');
 const normalize = require('normalize-url');
 
 // @route GET api/auth
-// @desc  TEST route
+// @desc  get one user by token
 // @access public
 router.get('/', auth, async(req,res)=>{
     try{

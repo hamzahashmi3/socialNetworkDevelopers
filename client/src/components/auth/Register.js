@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { setAlert } from '../../actions/alert';
-// import { register } from '../../actions/auth';
+import { register } from '../../actions/auth';
 import PropTypes from 'prop-types';
-// import axios from 'axios';
 
-
-const Register = ({ setAlert }) => {
+const Register = ({ setAlert, register, isAuthenticated }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,39 +17,19 @@ const Register = ({ setAlert }) => {
 
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-//   const onSubmit=async e=>{
+
   const onSubmit = async (e) => {
     e.preventDefault();
     if (password !== password2) {
       setAlert('Passwords do not match', 'danger');
     } else {
-        console.log(formData);
-    //   register({ name, email, password });
-
-      // IF WE USE AXIOS INSTEAD OF REDUX THEN THIS IS THE WAY TO SEND DATA TO BACKEND USING POST API ROUTE
-        // const newUser = {
-        //     name,
-        //     email,
-        //     password
-        // }
-        // try {
-        //     const config = {
-        //         headers:{
-        //             'Content-Type':'application/json'
-        //         }
-        //     }
-        //     const body = JSON.stringify(newUser);
-        //     const res = await axios.post('api/users', body, config)
-        //     console.log(res.data);
-        // } catch (error) {
-        //     console.log(error.message);
-        // }
+      register({ name, email, password });
     }
   };
 
-//   if (isAuthenticated) {
-//     return <Navigate to="/dashboard" />;
-//   }
+  if (isAuthenticated) {
+    return <Navigate to="/dashboard" />;
+  }
 
   return (
     <section className="container">
@@ -112,11 +90,11 @@ const Register = ({ setAlert }) => {
 Register.propTypes = {
   setAlert: PropTypes.func.isRequired,
   register: PropTypes.func.isRequired,
-//   isAuthenticated: PropTypes.bool
+  isAuthenticated: PropTypes.bool
 };
 
-// const mapStateToProps = (state) => ({
-//   isAuthenticated: state.auth.isAuthenticated
-// });
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated
+});
 
-export default connect(null, { setAlert })(Register);
+export default connect(mapStateToProps, { setAlert, register })(Register);
